@@ -140,7 +140,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'LinuxDesktops.tex', u'Linux Desktops Documentation',
-     u'iSolutions', 'manual'),
+     u'University of Southampton', 'manual'),
 ]
 
 
