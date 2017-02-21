@@ -4,7 +4,8 @@ Linux Desktops Documentation
 Welcome to the documentation for Linux Desktops at the University of Southampton
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 2
+   :caption: Overview
 
    deskctl
    software
@@ -14,11 +15,14 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
    permissions
    printing
    email
-   development
 
-Indices and tables
-==================
+.. toctree::
+   :maxdepth: 2
+   :caption: Development Tools
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   python
+   gcc
+   java
+   llvm
+   R
+
