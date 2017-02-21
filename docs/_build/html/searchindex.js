@@ -1,0 +1,1 @@
+Search.setIndex({docnames:["index"],envversion:50,filenames:["index.rst"],objects:{},objnames:{},objtypes:{},terms:{here:0,index:0,modul:0,page:0,search:0,some:0,tidbit:0,useful:0},titles:["Welcome to Linux Desktops&#8217;s documentation!"],titleterms:{desktop:0,document:0,indic:0,linux:0,tabl:0,welcom:0}})
