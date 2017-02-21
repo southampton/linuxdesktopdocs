@@ -1,4 +1,7 @@
 Installing software
 ===================
 
-Insert text here
+Via Desktop Manager
+-------------------
+
+The recommended method for installing software is via :doc:`deskctl`
