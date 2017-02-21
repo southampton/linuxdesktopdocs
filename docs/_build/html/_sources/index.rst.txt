@@ -1,16 +1,20 @@
-.. Linux Desktops documentation master file, created by
-   sphinx-quickstart on Tue Feb 21 18:34:13 2017.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Linux Desktops Documentation
+============================
 
-University of Southampton Linux Desktops Documentation
-======================================================
-
-Some useful tidbits here
+Welcome to the documentation for Linux Desktops at the University of Southampton
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 3
+
+   deskctl
+   software
+   backups
+   storage
+   mount
+   permissions
+   printing
+   email
+   development
 
 
 
