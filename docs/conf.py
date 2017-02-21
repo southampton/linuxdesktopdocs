@@ -83,6 +83,16 @@ todo_include_todos = False
 #
 html_theme = 'alabaster'
 
+html_sidebars = {
+    '**': [
+        'about.html',
+        'navigation.html',
+        'relations.html',
+        'searchbox.html',
+        'donate.html',
+    ]
+}
+
 #import guzzle_sphinx_theme
 
 #html_theme_path = guzzle_sphinx_theme.html_theme_path()
