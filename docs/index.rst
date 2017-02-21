@@ -16,8 +16,6 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
    email
    development
 
-
-
 Indices and tables
 ==================
 

@@ -1,4 +1,4 @@
-How to install software
-=======================
+Installing software
+===================
 
 Insert text here

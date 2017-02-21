@@ -1,4 +1,4 @@
-Manage your Desktop
+Manage your desktop
 ===================
 
 Insert text here
