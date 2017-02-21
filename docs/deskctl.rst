@@ -17,3 +17,4 @@ Desktop manager allows you to:
 * Check the status of backups
 * Check the software update status
 * Check the health of the system
+* View the system hardware information
