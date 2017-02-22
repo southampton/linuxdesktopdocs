@@ -4,7 +4,7 @@ Linux Desktops Documentation
 Welcome to the documentation for Linux Desktops at the University of Southampton
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Basics
 
    deskctl
@@ -17,7 +17,7 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
    email
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Advanced
 
    remoteaccess
@@ -27,7 +27,7 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
    gnomeext
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Development Tools
 
    python

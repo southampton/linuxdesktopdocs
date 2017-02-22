@@ -1,5 +1,5 @@
-Manage your desktop
-===================
+Desktop Manager
+===============
 
 You can manage your desktop using the Desktop Manager tool. Log in to your 
 desktop computer, open a web browser and go to the following location:
