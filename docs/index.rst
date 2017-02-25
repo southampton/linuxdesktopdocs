@@ -1,5 +1,5 @@
-Linux Desktops Documentation
-============================
+Linux Desktop Documentation
+===========================
 
 Welcome to the documentation for Linux Desktops at the University of Southampton
 
@@ -12,7 +12,6 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
    backups
    storage
    mount
-   permissions
    printing
    email
 
@@ -20,6 +19,7 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
    :maxdepth: 1
    :caption: Advanced
 
+   permissions
    remoteaccess
    desktops
    virtualisation
