@@ -18,12 +18,21 @@ You can check the usage of the drive in :doc:`deskctl`
 Local scratch space
 -------------------
 
-- Location: ``/local/scratch/$username/`` *or* ``/data``
+- Location: ``/local/scratch/$username/``
 - Backed up: ``No``
 
 If you need space for large amounts of data you should store this within
-your local scratch space. This is stored within the ``/local`` partition, or
-on computers with multiple drives, in ``/data``. Thus this is only limited
-by the size of the drive within your computer.
+your local scratch space. This space is however not backed up, so don't store
+anything important there!
+
+The scratch space is stored within the ``/local`` partition, thus this is only limited by the size of the drive within your computer.
 
 You can check the usage of the drive in :doc:`deskctl`
+
+Other locations
+---------------
+
+Some computers have multiple drives installed, in which case an iSolutions
+technician will have set up the second drive at ``/data``. Directories
+are not automatically created within this location. Any data stored there is
+not backed up.
