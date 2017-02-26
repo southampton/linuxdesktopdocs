@@ -66,24 +66,43 @@ There are various methods of connecting to network storage:
 via the file browser
 ^^^^^^^^^^^^^^^^^^^^
 
+If you're using GNOME (the default), XFCE, MATE or KDE then you can simply open 
+the file browser and enter the location you want to connect to by pressing ``Ctrl+L``
+or clicking ``Connect to server`` in the menu. You will be prompted for a 
+username and password as necessary.
 
+We strongly recommend you use this mechanism to connect to network storage. You
+can also access the connected storage from other applications and the command
+line. Once connected they are available via the normal filesystem here::
 
-sdsds
+   /run/user/$uid/gvfs/
 
-via GVFS
-^^^^^^^^
+via FUSE (SSH only)
+^^^^^^^^^^^^^^^^^^^
 
-sdsds
+If you prefer to connect to networked storage on the command line only, you can
+do so using the ``sshfs`` command. We strongly recommend you use the above
+mechanism (the file browser) instead since that can also be accessed from the
+command line. 
 
-via FUSE
-^^^^^^^^
+If you do want to use ``sshfs`` directly then run the command like so::
 
-sdsds
+   sshfs [user@]host:[dir] mountpoint 
+
+For example, here is how to connect to your personal filestore as ``testuser``::
+
+   mkdir ~/personalfs
+   sshfs testuser@ssh.soton.ac.uk:/home/testuser/ ~/personalfs
+
+You can then later disconnect with:
+
+   fusermount -u ~/personalfs
 
 via the ``mount`` command
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-asds
+You can also instruct the kernel to mount network storage if you desire. This 
+can however be quite complicated and this documentation only covers the basics.
 
 
 
