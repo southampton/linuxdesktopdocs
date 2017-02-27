@@ -94,7 +94,7 @@ For example, here is how to connect to your personal filestore as ``testuser``::
    mkdir ~/personalfs
    sshfs testuser@ssh.soton.ac.uk:/home/testuser/ ~/personalfs
 
-You can then later disconnect with:
+You can then later disconnect with::
 
    fusermount -u ~/personalfs
 
@@ -104,5 +104,14 @@ via the ``mount`` command
 You can also instruct the kernel to mount network storage if you desire. This 
 can however be quite complicated and this documentation only covers the basics.
 
+You can use the ``mount`` command via ``sudo`` if you are in the ``sys`` group
+(see :doc:`permissions` for more information). You can thus use the command
+like so::
 
+   sudo mount <options>
 
+Here is an example of how to mount personal filestore via the ``cifs`` driver 
+with the example username ``testuser``::
+
+   mkdir ~/personalfs
+   sudo mount -t cifs -o username=testuser,password=<password>,domain=soton.ac.uk //filestore.soton.ac.uk/users/testuser/ /home/testuser/personalfs/
