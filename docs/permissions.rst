@@ -1,6 +1,9 @@
 Permissions
 ===========
 
+Standard permissions
+--------------------
+
 All members of the University of Southampton can log on to any Linux Desktop. 
 Once logged in you are granted all normal Linux account rights, and in addition
 you may perform the following actions:
