@@ -14,7 +14,9 @@ packages as required.
 
    To install python modules via ``sudo pip`` you need to be in the 
    Administrators group. See :doc:`permissions` for more information. You don't
-   need to be in this group to use the ``conda`` command.
+   need to be in this group to use the ``conda`` command. You can also use 
+   ``pip`` directly, without ``sudo``, and install packages in your home 
+   directory.
 
 List of available implementations
 ---------------------------------
