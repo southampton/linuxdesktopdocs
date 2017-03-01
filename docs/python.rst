@@ -48,11 +48,8 @@ What implementation should I use?
 * If you want to use Python 3, and you don't need ``conda`` pacakges, then use the IUS Python 3.6 package and use ``pip3.6m`` to install pacakges
 * If you need ``conda`` packages (Anaconda Python packages) then use miniconda
 
-Recommended implementations
----------------------------
-
 RHEL system Python
-^^^^^^^^^^^^^^^^^^
+------------------
 
 Unless you need Python 3 or ``conda`` packages then we recommend you use the
 system python in ``/usr/bin/python``. This is supported by Red Hat and kept
@@ -63,7 +60,7 @@ You can install packages by running ``sudo pip`` eg::
    sudo pip install numpy
 
 IUS Python
-^^^^^^^^^^
+----------
 
 The IUS repository provides Python 3 packages for Red Hat Enterprise Linux. If
 you need to use Python 3 then we recommend you use the IUS Python packages. 
@@ -93,7 +90,7 @@ For example, to install ``numpy`` on IUS Python 3.6::
   sudo pip3.6 install numpy
 
 PyPy
-^^^^
+----
 
 PyPy is a just-in-time (JIT) compiler for Python which aims to be compatible
 with the standard CPython implementation. Using PyPy often yields significant
@@ -131,7 +128,7 @@ For example, to install ``numpy`` on PyPy 5.6::
    sudo /local/software/pypy/5.6/bin/pip install numpy
 
 Miniconda (Anaconda)
-^^^^^^^^^^^^^^^^^^^^
+--------------------
 
 Anaconda, and its ``conda`` package manager, is an alternative to the ``pip``
 package manager (although the developers insist it complements pip and solves
@@ -181,11 +178,8 @@ And if you want to delete an environment do the following::
 
    conda remove -n yourenvname -all
 
-Other implementations 
-------------------------
-
 SCL Python
-^^^^^^^^^^
+----------
 
 .. note::
 
@@ -220,7 +214,7 @@ command we've created. So to install packages you should run::
    sclsudo pip install numpy
 
 EPEL Python
-^^^^^^^^^^^
+-----------
 
 .. note::
 
@@ -244,7 +238,7 @@ and you can install packages with ``pip``::
    sudo /usr/bin/pip3.4 install numpy
 
 Jython
-^^^^^^
+------
 
 Jython is an implementation of Python running on the Java virtual machine (JVM).
 Red Hat have provided a packaged version of Jython as part of their Developer
