@@ -31,7 +31,6 @@ List of available implementations
 
    * PyPy 5.6 - 2.7.12
    * PyPy3 5.5-alpha - 3.3
-   * EPEL package - 5.0 / 2.7.10
 
 * Jython
 
@@ -127,10 +126,58 @@ You can install packages with ``pip``:
 
 For example, to install ``numpy`` on PyPy 5.6::
 
-  sudo /local/software/pypy/5.6/bin/pip install numpy
+   sudo /local/software/pypy/5.6/bin/pip install numpy
 
-Miniconda (Anaconda) 
+Miniconda (Anaconda)
 ^^^^^^^^^^^^^^^^^^^^
+
+Anaconda, and its ``conda`` package manager, is an alternative to the ``pip``
+package manager (although the developers insist it complements pip and solves
+different problems). 
+
+Anaconda, conda and miniconda are not designed for "system-wide" use, they are 
+intended for individual users to download and install for just that one user. 
+Better multi-user support is planned, but as of March 2017, is not yet 
+available. 
+
+To use ``conda`` you don't need to download and install Anaconda or miniconda
+yourself, instead you can get started by installing ``miniconda`` which just
+contains ``conda`` and ``python``::
+
+   sudo yum install miniconda
+
+Once installed you can use ``conda`` to create a new environment within your
+home directory with whatever version of Python and whichever Python packages
+you need.
+
+You should start by creating an environment, e.g::
+
+   conda create -n yourenvname python=x.x
+
+You specify the version of python you want with the ``python=x.x`` flag, but 
+this is optional and it will install the version of Python shipped with 
+``miniconda`` which at the time of writing is Python 3.6.0.
+
+You can specify at creation time the packages you want installed. For example,
+to install the entire anaconda set of packages you can do the following::
+
+   conda create -n yourenvname python=3.6 anaconda
+
+You can then use your new environment like so::
+
+   source activate yourenvname
+
+And you can then stop using it like so::
+
+   source deactivate
+
+You can install additional packages with ``conda``::
+
+   conda install -n yourenvname [package]
+
+And if you want to delete an environment do the following::
+
+   conda remove -n yourenvname -all
 
 Other implementations 
 ------------------------
@@ -138,9 +185,75 @@ Other implementations
 SCL Python
 ^^^^^^^^^^
 
+.. note::
+
+   The SCL python33 package conflicts with the IUS Python packages. You
+   cannot have both versions installed at the same time. To install the SCL
+   python33 package you must first remove the IUS Python packages. In any case
+   we strongly recommend you use the IUS packages rather than SCL.
+
+Red Hat provides several CPython packages as part of its "Software Collections"
+system. These packages are generally older than the IUS packages and are more
+difficult to use - they require the use of the ``scl`` command. At the time
+of writing the following versions are available:
+
+* Python 2.7.8 - ``sudo yum install python27 python27-python-pip`` 
+* Python 3.3.2 - ``sudo yum install python33``
+* Python 3.4.2 - ``sudo yum install rh-python34 rh-python34-python-pip``
+* Python 3.5.1 - ``sudo yum install rh-python35 rh-python35-python-pip``
+
+Once installed you can't use python until you use the ``scl`` command
+which is somewhat like the environment module system::
+
+* Python 2.7.8 - ``scl enable python27 bash``
+* Python 3.3.2 - ``scl enable python33 bash``
+* Python 3.4.2 - ``scl enable rh-python34 bash``
+* Python 3.5.1 - ``scl enable rh-python34 bash``
+
+Once you've run the ``scl`` command then the ``python`` command will now be the
+version of Python you requested. The ``pip`` command will also be updated
+for the SCL python, but it won't work unless you use a special ``sclsudo`` 
+command we've created. So to install packages you should run::
+
+   sclsudo pip install numpy
+
 EPEL Python
 ^^^^^^^^^^^
+
+.. note::
+
+   The EPEL python 3.4 package conflicts with the IUS Python 3.4 package. You
+   cannot have both versions installed at the same time. To install the EPEL
+   python you must first remove the IUS Python 3.4 packages. In any case
+   we strongly recommend you use the IUS packages rather than EPEL.
+
+Another alternative Python 3 package is provided by EPEL. We recommend that
+you use the IUS packages instead since the EPEL Python package is now quite
+out of date. If you do want to use it, install it like so::
+
+   sudo yum install python34 python34-pip
+
+You can then use the package with the binary path::
+
+   /usr/bin/python3.4
+
+and you can install packages with ``pip``::
+
+   sudo /usr/bin/pip3.4 install numpy
 
 Jython
 ^^^^^^
 
+Jython is an implementation of Python running on the Java virtual machine (JVM).
+Red Hat have provided a packaged version of Jython as part of their Developer
+Toolset 4 product. To install it run this command::
+
+   sudo yum install devtoolset-4 devtoolset-4-jython
+
+Then run the ``scl`` command to enable it::
+
+   scl enable devtoolset-4 bash
+
+You can then run jython directly::
+
+   jython
