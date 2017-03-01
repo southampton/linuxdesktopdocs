@@ -13,7 +13,8 @@ packages as required.
 .. note::
 
    To install python modules via ``sudo pip`` you need to be in the 
-   Administrators group. See :doc:`permissions` for more information.
+   Administrators group. See :doc:`permissions` for more information. You don't
+   need to be in this group to use the ``conda`` command.
 
 List of available implementations
 ---------------------------------
@@ -42,10 +43,8 @@ the ``yum`` commands to use instead.
 What implementation should I use?
 ---------------------------------
 
-* If you want to use Python 2, and you don't need ``conda`` packages, then use
-the RHEL system Python, and use ``pip`` to install packages.
-* If you want to use Python 3, and you don't need ``conda`` pacakges, then use
-the IUS Python 3.6 package and use ``pip3.6m`` to install pacakges
+* If you want to use Python 2, and you don't need ``conda`` packages, then use the RHEL system Python, and use ``pip`` to install packages.
+* If you want to use Python 3, and you don't need ``conda`` pacakges, then use the IUS Python 3.6 package and use ``pip3.6m`` to install pacakges
 * If you need ``conda`` packages (Anaconda Python packages) then use miniconda
 
 Recommended implementations
@@ -95,6 +94,41 @@ For example, to install ``numpy`` on IUS Python 3.6::
 PyPy
 ^^^^
 
+PyPy is a just-in-time (JIT) compiler for Python which aims to be compatible
+with the standard CPython implementation. Using PyPy often yields significant
+performance benefits.
+
+To install PyPy run the following command::
+
+   sudo yum install pypy256
+
+This installs PyPy 5.6 which is compatible with CPython 2.7.12.
+
+To install PyPy3 run the following command::
+
+   sudo yum install pypy3355
+
+This installs PyPy3 5.5-alpha which is compatible with CPython 3.3.5.
+
+To run PyPy you can either use the following paths:
+
+* ``/usr/bin/pypy56`` - PyPy 5.6 (Python 2.7.12)
+* ``/usr/bin/pypy3355`` - PyPy 5.5-alpha (Python 3.3.5)
+
+Or you can use the ``module`` system:
+
+* ``module load pypy/5.6`` - PyPy 5.6 (Python 2.7.12)
+* ``module load pypy/3.3-5.5`` - PyPy 5.5-alpha (Python 3.3.5)
+
+You can install packages with ``pip``:
+
+* ``sudo /local/software/pypy/5.6/bin/pip`` - PyPy 5.6 (Python 2.7.12)
+* ``sudo /local/software/pypy/3.3-5.5/bin/pip3`` - PyPy 5.5-alpha (Python 3.3.5)
+
+For example, to install ``numpy`` on PyPy 5.6::
+
+  sudo /local/software/pypy/5.6/bin/pip install numpy
+
 Miniconda (Anaconda) 
 ^^^^^^^^^^^^^^^^^^^^
 
@@ -106,7 +140,7 @@ SCL Python
 
 EPEL Python
 ^^^^^^^^^^^
-/
+
 Jython
 ^^^^^^
 
