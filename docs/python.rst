@@ -41,7 +41,7 @@ List of available implementations
 You can use :doc:`deskctl` to install the various options, or read below for
 the ``yum`` commands to use instead.
 
-What implementation should I use?
+Which implementation should I use?
 ---------------------------------
 
 * If you want to use Python 2, and you don't need ``conda`` packages, then use the RHEL system Python, and use ``pip`` to install packages.
