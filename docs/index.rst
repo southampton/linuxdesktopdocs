@@ -25,6 +25,8 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
    virtualisation
    firewall
    gnomeext
+   envmodules
+   scl
 
 .. toctree::
    :maxdepth: 1
