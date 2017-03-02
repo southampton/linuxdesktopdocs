@@ -118,6 +118,9 @@ Or you can use the ``module`` system:
 * ``module load pypy/5.6`` - PyPy 5.6 (Python 2.7.12)
 * ``module load pypy/3.3-5.5`` - PyPy 5.5-alpha (Python 3.3.5)
 
+Once you've loaded the module you can use the ``pypy`` command directly and
+it will correspond to the version of pypy you chose to load.
+
 You can install packages with ``pip``:
 
 * ``sudo /local/software/pypy/5.6/bin/pip`` - PyPy 5.6 (Python 2.7.12)
@@ -154,8 +157,8 @@ You should start by creating an environment, e.g::
    conda create -n yourenvname python=x.x
 
 You specify the version of python you want with the ``python=x.x`` flag, but 
-this is optional and it will install the version of Python shipped with 
-``miniconda`` which at the time of writing is Python 3.6.0.
+this is optional and if omitted conda will use the version of Python shipped 
+with ``miniconda`` which at the time of writing is Python 3.6.0.
 
 You can specify at creation time the packages you want installed. For example,
 to install the entire anaconda set of packages you can do the following::
@@ -199,7 +202,7 @@ of writing the following versions are available:
 * Python 3.5.1 - ``sudo yum install rh-python35 rh-python35-python-pip``
 
 Once installed you can't use python until you use the ``scl`` command
-which is somewhat like the environment module system::
+which is somewhat like the environment module system:
 
 * Python 2.7.8 - ``scl enable python27 bash``
 * Python 3.3.2 - ``scl enable python33 bash``
