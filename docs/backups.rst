@@ -21,10 +21,19 @@ How can I check the backups are working?
 
 You can use :doc:`deskctl` to check the status of the last backup attempt.
 
+You can also, if you prefer, run the following command in a terminal::
+
+   sudo drone backup status
+
 Can I trigger a backup?
 -----------------------
 
-TODO
+Yes you can start a backup whenever you need to, this allows you to take a 
+backup before turning your computer off for the day for example. You can start
+a backup using :doc:`deskctl` or if you prefer you can run the following 
+command in a terminal::
+
+   sudo drone backup now
 
 Can I use my PC whilst a backup is underway?
 ------------------------------------------------------
