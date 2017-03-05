@@ -62,8 +62,8 @@ You can install packages by running ``sudo pip`` eg::
 IUS Python
 ----------
 
-The IUS repository provides Python 3 packages for Red Hat Enterprise Linux. If
-you need to use Python 3 then we recommend you use the IUS Python packages. 
+The :doc:`ius` repository provides Python 3 packages for Red Hat Enterprise Linux. If
+you need to use Python 3 then we recommend you use the :doc:`ius` Python packages. 
 Several versions are available for install:
 
 * Python 3.4 - ``sudo yum install python34u python34u-pip``
@@ -76,7 +76,7 @@ You can then use Python via the following paths to the binary:
 * Python 3.5 - ``/usr/bin/python3.5``
 * Python 3.6 - ``/usr/bin/python3.6``
 
-The version of Python in ``/usr/bin/python3`` depends on the order the IUS
+The version of Python in ``/usr/bin/python3`` depends on the order the :doc:`ius`
 packages are installed, so we don't recommend you use that path. 
 
 You can install packages via ``sudo pip``:
@@ -85,7 +85,7 @@ You can install packages via ``sudo pip``:
 * Python 3.5 - ``sudo pip3.5``
 * Python 3.6 - ``sudo pip3.6``
 
-For example, to install ``numpy`` on IUS Python 3.6::
+For example, to install ``numpy`` on :doc:`ius` Python 3.6::
 
   sudo pip3.6 install numpy
 
@@ -186,13 +186,13 @@ SCL Python
 
 .. note::
 
-   The SCL python33 package conflicts with the IUS Python packages. You
-   cannot have both versions installed at the same time. To install the SCL
-   python33 package you must first remove the IUS Python packages. In any case
-   we strongly recommend you use the IUS packages rather than SCL.
+   The :doc:`scl` python33 package conflicts with the :doc:`ius` Python packages. You
+   cannot have both versions installed at the same time. To install the :doc:`scl`
+   python33 package you must first remove the :doc:`ius` Python packages. In any case
+   we strongly recommend you use the :doc:`ius` packages rather than :doc:`scl`.
 
 Red Hat provides several CPython packages as part of its "Software Collections"
-system. These packages are generally older than the IUS packages and are more
+system. These packages are generally older than the :doc:`ius` packages and are more
 difficult to use - they require the use of the ``scl`` command. At the time
 of writing the following versions are available:
 
@@ -211,7 +211,7 @@ which is somewhat like the environment module system:
 
 Once you've run the ``scl`` command then the ``python`` command will now be the
 version of Python you requested. The ``pip`` command will also be updated
-for the SCL python, but it won't work unless you use a special ``sclsudo`` 
+for the :doc:`scl` python, but it won't work unless you use a special ``sclsudo`` 
 command we've created. So to install packages you should run::
 
    sclsudo pip install numpy
@@ -221,13 +221,13 @@ EPEL Python
 
 .. note::
 
-   The EPEL python 3.4 package conflicts with the IUS Python 3.4 package. You
+   The EPEL python 3.4 package conflicts with the :doc:`ius` Python 3.4 package. You
    cannot have both versions installed at the same time. To install the EPEL
-   python you must first remove the IUS Python 3.4 packages. In any case
-   we strongly recommend you use the IUS packages rather than EPEL.
+   python you must first remove the :doc:`ius` Python 3.4 packages. In any case
+   we strongly recommend you use the :doc:`ius` packages rather than EPEL.
 
-Another alternative Python 3 package is provided by EPEL. We recommend that
-you use the IUS packages instead since the EPEL Python package is now quite
+Another alternative Python 3 package is provided by :doc`epel`. We recommend that
+you use the :doc:`ius` packages instead since the EPEL Python package is now quite
 out of date. If you do want to use it, install it like so::
 
    sudo yum install python34 python34-pip
