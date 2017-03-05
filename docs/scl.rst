@@ -1,5 +1,8 @@
-Software Collections (SCL)
-==========================
+SCL
+===
+
+Software Collections
+--------------------
 
 Sofware collections - or SCL - is a collection of 'add-on' software packages
 created and maintained by Red Hat. They were created in order to deliver
