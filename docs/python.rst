@@ -25,9 +25,9 @@ List of available implementations
 
    * RHEL system python - 2.7.5
    * Miniconda (Anaconda) - 2.7, 3.6
-   * IUS packages - 3.4.6, 3.5.3, 3.6.0
-   * SCL packages - 2.7.8, 3.3.2, 3.4.2, 3.5.1
-   * EPEL package - 3.4.5
+   * :doc:`ius` packages - 3.4.6, 3.5.3, 3.6.0
+   * :doc:`scl` packages - 2.7.8, 3.3.2, 3.4.2, 3.5.1
+   * :doc:`epel` package - 3.4.5
 
 * PyPy
 
@@ -36,7 +36,7 @@ List of available implementations
 
 * Jython
 
-   * SCL Jython 2.7
+   * :doc:`scl` Jython 2.7
 
 You can use :doc:`deskctl` to install the various options, or read below for
 the ``yum`` commands to use instead.

@@ -36,7 +36,7 @@ command in a terminal::
    sudo drone backup now
 
 Can I use my PC whilst a backup is underway?
-------------------------------------------------------
+--------------------------------------------
 
 Yes. The backup system takes a snapshot of the data when the process begins
 and backs up the data in the snapshot. You can thus carry on using your 

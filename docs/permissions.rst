@@ -15,6 +15,8 @@ you may perform the following actions:
 - Can manage NVIDIA graphics settings via ``sudo nvidia-settings``
 - Can reboot/poweroff/hibernate/suspend the computer
 - Can run the following commands: ``reboot``, ``poweroff``, ``halt``
+- Can start a backup with ``sudo drone backup now``
+- Can check the backup status with ``sudo drone backup status``
 
 Additional permissions
 ----------------------
