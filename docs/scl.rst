@@ -13,4 +13,4 @@ to use without affecting the stability and security of the base product.
 
 Due to our education licence all SCL software is available to users of our
 linux desktops. More information about all the available packages can be found
-on the dedicated `software collections website <http://softwarecollections.org/>`_.
+on the dedicated `software collections website <https://www.softwarecollections.org/en/scls//>`_.
