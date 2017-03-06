@@ -15,7 +15,8 @@ You can install the latest VirtualBox with the following command::
 Older versions are available but we recommend you install the latest.
 
 Once installed you can start VirtualBox and start creating virtual machines 
-straight away! 
+straight away! We recommend you store your virtual machine disks in the
+``/local/scratch/<username/`` directory - see :doc:`storage` for more info.
 
 Rebuilding the kernel module
 ----------------------------
