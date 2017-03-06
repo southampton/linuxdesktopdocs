@@ -54,6 +54,7 @@ They are also granted permissions via ``PolicyKit`` to do the following:
 - Manage printers (including adding printers)
 - Manage the network settings
 - Manage ``tuned``
+- Reinstall the VirtualBox kernel module
 
 iSolutions are more than happy to grant additional privileges to these users
 upon request.
@@ -61,13 +62,15 @@ upon request.
 Virtual Box
 ^^^^^^^^^^^
 
-Users in the ``vboxusers`` group can utilise Virtual Box.
+Users in the ``vboxusers`` group can utilise USB devices in Virtual Box and
+can reinstall the VirtualBox kernel module. 
 
 Root access
 ^^^^^^^^^^^
 
 Users in the ``wheel`` group are granted full root access via ``sudo`` and 
-are granted all privileges via ``policykit``.
+are granted all privileges via ``policykit``. Only members of iSolutions 
+can grant access to this group and is done so rarely.
 
 Granting permissions
 --------------------
