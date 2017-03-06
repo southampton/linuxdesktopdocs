@@ -27,6 +27,8 @@ iSolutions recommend the following extensions which will enhance GNOME 3:
 * `TopIcons <https://extensions.gnome.org/extension/495/topicons/>`_
 * `Sound input & output device chooser <https://extensions.gnome.org/extension/906/sound-output-device-chooser/>`_
 * `Places status indicator <https://extensions.gnome.org/extension/8/places-status-indicator/>`_
+* `Log out button <https://extensions.gnome.org/extension/1143/logout-button/>`_
+* `Trash button <https://extensions.gnome.org/extension/48/trash/>`_
 
 For laptops:
 
