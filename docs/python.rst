@@ -42,7 +42,7 @@ You can use :doc:`deskctl` to install the various options, or read below for
 the ``yum`` commands to use instead.
 
 Which implementation should I use?
----------------------------------
+----------------------------------
 
 * If you want to use Python 2, and you don't need ``conda`` packages, then use the RHEL system Python, and use ``pip`` to install packages.
 * If you want to use Python 3, and you don't need ``conda`` pacakges, then use the IUS Python 3.6 package and use ``pip3.6m`` to install pacakges

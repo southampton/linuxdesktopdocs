@@ -40,3 +40,11 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
    cuda
    ruby
    perl
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Glossary
+
+   epel
+   ius
+   scl
