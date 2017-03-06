@@ -7,7 +7,7 @@ supported by Red Hat for two years. RHDT uses the :doc:`scl` system so that
 the tools are installed alongside and do not conflict with the base software
 within Red Hat Enterprise Linux.
 
-RHDT includes a full development toolset of::
+RHDT includes the following packages:
 
 * GCC (C, C++, and Fortran)
 * Eclipse IDE
