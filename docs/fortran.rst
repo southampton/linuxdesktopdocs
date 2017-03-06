@@ -9,7 +9,7 @@ use for computational chemistry and fluid dynamics.
 List of compilers
 -----------------
 
-Several C and C++ compilers are available on the Linux desktop platform:
+Two different compilers are available:
 
 * gFortran (Part of the GNU compiler collection)
 
