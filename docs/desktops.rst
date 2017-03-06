@@ -4,12 +4,12 @@ Desktop environments
 GNOME 3
 -------
 
-GNOME 3 is the default desktop environment on university linux desktops. It is 
+GNOME 3 is the default desktop environment on university Linux desktops. It is 
 the most feature complete and useful desktop and as such as we highly 
 recommend using it.
 
 GNOME 3, like many recent desktop environments, does not use the classic
-Windows style taskbar model, or the Mac OS X style dock model. It can however
+Windows style task bar model, or the Mac OS X style dock model. It can however
 be heavily customised by the *GNOME Tweak Tool* and :doc:`gnomeext`. 
 
 Xfce 4
@@ -17,7 +17,7 @@ Xfce 4
 
 XFCE is a lightweight alternative to GNOME, whilst still utilising a lot of 
 the core components of GNOME. It can be heavily customised and is considered a
-more traditional desktop envrionment. If you do not like GNOME 3 then we
+more traditional desktop environment. If you do not like GNOME 3 then we
 recommend using XFCE instead.
 
 You can use :doc:`deskctl` to install XFCE, or use the following command in a
@@ -45,7 +45,7 @@ MATE
 MATE is a fork of the GNOME 2 project, and as such it is essentially an updated
 GNOME 2 desktop environment. If you liked GNOME 2, and wish to continue using 
 it, then MATE may suit you. The latest version of MATE - 1.16 - is available
-and despite being based on GNOME 2 has been largely re-written in GTK3.
+and despite being based on GNOME 2 has been largely rewritten in GTK3.
 
 You can use :doc:`deskctl` to install MATE, or use the following command in a
 terminal::
@@ -57,7 +57,7 @@ i3
 
 i3 is a tiling window manager similar to wmii. It is not a full desktop 
 environment and it is intended for advanced users. Unless you have experience
-with ultra-lightweight tiling window managers we do not recommend using i3.
+with ultra lightweight tiling window managers we do not recommend using i3.
 
 You can use :doc:`deskctl` to install i3, or use the following command in a
 terminal::

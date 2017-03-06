@@ -73,7 +73,7 @@ username and password as necessary.
 
 We strongly recommend you use this mechanism to connect to network storage. You
 can also access the connected storage from other applications and the command
-line. Once connected they are available via the normal filesystem here::
+line. Once connected they are available via the normal file system here::
 
    /run/user/$uid/gvfs/
 

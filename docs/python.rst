@@ -2,7 +2,7 @@ Python
 ======
 
 Python is a popular and versatile programming language used in many scientific
-disiplines across the university. It is by far the most popular language in use
+disciplines across the university. It is by far the most popular language in use
 by staff at Southampton and is the most used tool on Windows desktops too!
 
 The university Linux desktop platform has a large number of Python 
@@ -139,7 +139,7 @@ different problems).
 
 Anaconda, conda and miniconda are not designed for "system-wide" use, they are 
 intended for individual users to download and install for just that one user. 
-Better multi-user support is planned, but as of March 2017, is not yet 
+Better multi user support is planned, but as of March 2017, is not yet 
 available. 
 
 To use ``conda`` you don't need to download and install Anaconda or miniconda

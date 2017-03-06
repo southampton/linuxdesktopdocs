@@ -41,7 +41,7 @@ Can I use my PC whilst a backup is underway?
 Yes. The backup system takes a snapshot of the data when the process begins
 and backs up the data in the snapshot. You can thus carry on using your 
 computer without affecting the backup (or the backup affecting your data). The
-backup system uses LVM thin snapshots to acomplish this.
+backup system uses LVM thin snapshots to accomplish this.
 
 Do backups work outside the University network?
 -----------------------------------------------
