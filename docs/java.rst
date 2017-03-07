@@ -59,3 +59,21 @@ binaries:
 +--------------------+--------------------------------------------------------+
 | IBM Java 1.8       | ``/usr/lib/jvm/java-1.8.0-ibm/bin/java``               |
 +--------------------+--------------------------------------------------------+
+
+Setting the default system Java
+-------------------------------
+
+Instead of having to use the above method to use a particular version of Java
+you may use the ``alternatives`` command to change the default version of Java
+in use. This will affect every user on the system so please only do this if
+you are sure you will not impact other users.
+
+.. note::
+
+   To set the system wide default Java you need to be in the Administrators 
+   group. See :doc:`permissions` for more information.
+
+Run the following commands and follow the instructions to change the default::
+
+   sudo alternatives --config java
+   sudo alternatives --config javac
