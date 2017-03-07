@@ -54,7 +54,8 @@ They are also granted permissions via ``PolicyKit`` to do the following:
 - Manage printers (including adding printers)
 - Manage the network settings
 - Manage ``tuned``
-- Reinstall the VirtualBox kernel module
+- Reinstall the VirtualBox kernel module (See :doc:`virtualisation`)
+- Set the default version of java/javac (See :doc:`java`)
 
 iSolutions are more than happy to grant additional privileges to these users
 upon request.
