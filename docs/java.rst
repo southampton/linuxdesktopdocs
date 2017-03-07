@@ -18,7 +18,8 @@ platform:
 
 We strongly recommend the use of either Oracle Java 1.8 or OpenJDK Java 1.8.
 
-Here are the commands to run in a terminal to install the various versions:
+You can install the different versions via :doc:`deskctl` or if you prefer
+here are the commands to run in a terminal to install them instead:
 
 +--------------------+--------------------------------------------------------+
 | Oracle Java 1.6    | ``sudo yum install java-1.6.0-sun-devel``              |
