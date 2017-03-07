@@ -41,6 +41,7 @@ run the following commands as root:
 - ``rpm`` - for installing local RPM packages
 - ``pip`` - for installing Python packages
 - ``cpan`` - for installing Perl modules
+- ``gem`` - for installing Ruby gems (packages)
 
 They are also granted permissions via ``PolicyKit`` to do the following:
 
