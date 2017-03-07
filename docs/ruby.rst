@@ -42,7 +42,7 @@ tool::
    sudo gem install <package>
 
 If you're using one of the :doc:`scl` packaged versions of Ruby then you need 
-to run this command instead:
+to run this command instead::
 
    sclsudo gem install <package>
 
