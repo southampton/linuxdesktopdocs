@@ -30,12 +30,13 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
 
 .. toctree::
    :maxdepth: 1
-   :caption: Development
+   :caption: Tools
 
    python
    c
    fortran
    java
+   latex
    R
    cuda
    ruby
