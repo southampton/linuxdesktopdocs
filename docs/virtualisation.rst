@@ -22,7 +22,7 @@ Rebuilding the kernel module
 ----------------------------
 
 After a ``kernel`` update is installed you might find that VirtualBox no longer
-works and generates an error similar to ``Kernel driver not installed ``. To fix
+works and generates an error similar to ``Kernel driver not installed``. To fix
 this you must run the following command in a terminal::
 
    sudo /usr/lib/virtualbox/vboxdrv.sh setup
