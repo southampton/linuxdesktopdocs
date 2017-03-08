@@ -15,6 +15,8 @@ Desktop manager allows you to:
 * Install software, including University provided software
 * Manage permissions (change who can do what)
 * Check the status of backups
+* Start a backup on demand
 * Check the software update status
 * Check the health of the system
 * View the system hardware information
+* Open this documentation
