@@ -24,6 +24,7 @@ Several C and C++ compilers are available on the Linux desktop platform:
 
 * Clang (LLVM C/C++ compiler)
 
+   * v4.0.0
    * v3.9.1
    * v3.4.2 from the :doc:`epel` project
 
@@ -64,7 +65,7 @@ LLVM Clang
 Clang is the compiler from the LLVM project. To use it first install the latest
 version at the time of writing::
 
-   sudo yum install llvm391
+   sudo yum install llvm400
 
 The LLVM package includes:
 
@@ -76,6 +77,6 @@ The LLVM package includes:
 
 Once installed you should use the :doc:`envmodules` to use clang itself::
 
-   module load llvm/3.9.1
+   module load llvm/4.0.0
 
 See :doc:`envmodules` for more information on using the module system.
