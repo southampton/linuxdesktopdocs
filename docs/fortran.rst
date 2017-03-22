@@ -9,7 +9,7 @@ use for computational chemistry and fluid dynamics.
 List of compilers
 -----------------
 
-Two different compilers are available:
+Several different compilers are available:
 
 * gFortran (Part of the GNU compiler collection)
 
@@ -18,9 +18,13 @@ Two different compilers are available:
    * v5.3 - part of :doc:`rhdt` 4
    * v6.2 - part of :doc:`rhdt` 6
 
-* PGI Fortran
+* NVIDIA Portland Group (PGI) Fortran
 
-   * N/A (not yet packaged, coming soon!)
+   * 17.1
+
+* Intel Parallel Studio XE:
+
+   * 2017 Update 2
 
 GCC 
 ---
@@ -52,3 +56,26 @@ PGI Fortran
 -----------
 
 We have not yet packaged this, although it will be done soon!
+
+Intel
+-----
+
+
+Intel's Fortran compiler - ``ifort`` - is part of the Intel Parallel Studio 
+XE product. This is available to you as a member of the University. At the 
+time of writing the latest version - 2017 Update 2 - is available. To install it 
+you can use the following command::
+
+   sudo yum install intel-parallel-studio-2017u2
+
+This installs all of the components of the Cluster Edition of the Intel 
+Parallel Studio. To use the Parallel Suite you must first load the environment
+module::
+
+   module load intel/2017u2
+
+Once loaded all of the environment modules are set such that you should be
+able to run the ``configure`` script (or similar mechanism) and it should use
+the Intel compilers. You can also use ``ifort`` directly.
+
+See :doc:`envmodules` for more information on using the module system.
