@@ -45,4 +45,3 @@ an implementation simply ``module load`` the version you prefer:
 * 1.10.6 (icc): ``sudo yum install openmpi1106-intel``
 * 2.0.2 (gcc): ``sudo yum install openmpi202``
 * 2.0.2 (icc): ``sudo yum install openmpi202-intel``
-

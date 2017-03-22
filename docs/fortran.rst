@@ -37,7 +37,7 @@ Later versions are available as part of the :doc:`rhdt` bundles:
 * v6.2: ``sudo yum install devtoolset-6-gcc-gfortran``
 
 Once you have installed the packages you need to use :doc:`scl` to use the 
-updated version of gfortran like so::
+updated version of gfortran like so:
 
 * v4.9: ``scl enable devtoolset-3 bash``
 * v5.3: ``scl enable devtoolset-4 bash``
