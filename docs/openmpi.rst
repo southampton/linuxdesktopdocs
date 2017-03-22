@@ -8,7 +8,7 @@ multiple machines.
 Available versions
 ------------------
 
-At the time of writing five versions of OpenMPI are avaialble for use:
+At the time of writing five versions of OpenMPI are available for use:
 
 * Red Hat OpenMPI 1.10.3 (gcc)
 * UoS OpenMPI 1.10.6 (gcc)
