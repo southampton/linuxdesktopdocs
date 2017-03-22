@@ -60,7 +60,6 @@ We have not yet packaged this, although it will be done soon!
 Intel
 -----
 
-
 Intel's Fortran compiler - ``ifort`` - is part of the Intel Parallel Studio 
 XE product. This is available to you as a member of the University. At the 
 time of writing the latest version - 2017 Update 2 - is available. To install it 
@@ -76,6 +75,6 @@ module::
 
 Once loaded all of the environment modules are set such that you should be
 able to run the ``configure`` script (or similar mechanism) and it should use
-the Intel compilers. You can also use ``ifort`` directly.
+the Intel compiler. You can also use ``ifort`` directly.
 
 See :doc:`envmodules` for more information on using the module system.
