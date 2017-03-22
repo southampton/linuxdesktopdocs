@@ -18,15 +18,19 @@ Several C and C++ compilers are available on the Linux desktop platform:
    * v5.3 - part of :doc:`rhdt` 4
    * v6.2 - part of :doc:`rhdt` 6
 
-* ICC (Intel compiler suite)
+* ICC/ICPC (Intel compiler suite)
 
-   * N/A (not yet packaged, coming soon!)
+   * 2017 Update 2
 
 * Clang (LLVM C/C++ compiler)
 
    * v4.0.0
    * v3.9.1
    * v3.4.2 from the :doc:`epel` project
+
+* PGI (NVIDIA Portland Group Compiler Suite)
+
+   * 17.1
 
 GCC 
 ---
@@ -54,10 +58,27 @@ requested.
 
 See the :doc:`softwarecollections` document for more information on using :doc:`scl`.
 
-ICC
----
+Intel
+-----
 
-We have not yet packaged the Intel Parallel Suite.
+Intel's C and C++ compiler is part of the Intel Parallel Studio XE product. This
+is available to you as a member of the University. At the time of writing 
+the latest version - 2017 Update 2 - is available. To install it you can use
+the following command::
+
+   sudo yum install intel-parallel-studio-2017u2
+
+This installs all of the components of the Cluster Edition of the Intel 
+Parallel Studio. To use the Parallel Suite you must first load the environment
+module::
+
+   module load intel/2017u2
+
+Once loaded all of the environment modules are set such that you should be
+able to run the ``configure`` script (or similar mechanism) and it should use
+the Intel compilers. You can also use ``icc``, ``icpc`` and ``ifort`` directly.
+
+See :doc:`envmodules` for more information on using the module system.
 
 LLVM Clang
 ----------

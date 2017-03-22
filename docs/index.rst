@@ -39,6 +39,7 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
    latex
    R
    cuda
+   openmpi
    ruby
    perl
 
