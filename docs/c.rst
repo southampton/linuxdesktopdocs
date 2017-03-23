@@ -84,7 +84,7 @@ LLVM Clang
 ----------
 
 Clang is the compiler from the LLVM project. To use it first install the latest
-version at the time of writing::
+version::
 
    sudo yum install llvm400
 
@@ -99,5 +99,25 @@ The LLVM package includes:
 Once installed you should use the :doc:`envmodules` to use clang itself::
 
    module load llvm/4.0.0
+
+See :doc:`envmodules` for more information on using the module system.
+
+
+NVIDIA PGI Compilers
+--------------------
+
+The portland group (PGI) compilers, now owned by NVIDIA, are a series of high 
+performance C, C++ and Fortran compilers which are heavily used within high
+performance computiing. To use the PGI compilers first install the latest
+version::
+
+   sudo yum install pgi171
+
+Once installed you should use the :doc:`envmodules` to use the compilers::
+
+   module load pgi/17.1
+
+You can then use ``pgcc`` (the C compiler), ``pgc++`` (the C++ compiler) or
+``pgfortran`` (the Fortran compiler) directly. 
 
 See :doc:`envmodules` for more information on using the module system.

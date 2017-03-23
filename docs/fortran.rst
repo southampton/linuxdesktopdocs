@@ -55,7 +55,25 @@ See the :doc:`softwarecollections` document for more information on using :doc:`
 PGI Fortran
 -----------
 
-We have not yet packaged this, although it will be done soon!
+The portland group (PGI) compilers, now owned by NVIDIA, are a series of high 
+performance C, C++ and Fortran compilers which are heavily used within high
+performance computiing. To use the PGI compilers first install the latest
+version::
+
+   sudo yum install pgi171
+
+Once installed you should use the :doc:`envmodules` to use the compilers::
+
+   module load pgi/17.1
+
+You can then use ``pgfortran`` (the Fortran compiler) directly, or one of the
+several version specific binaries:
+
+* ``pgf77``
+* ``pgf90``
+* ``pgf95``
+
+See :doc:`envmodules` for more information on using the module system.
 
 Intel
 -----
