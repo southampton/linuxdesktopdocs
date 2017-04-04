@@ -14,6 +14,7 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
    mount
    printing
    email
+   packages
 
 .. toctree::
    :maxdepth: 1
