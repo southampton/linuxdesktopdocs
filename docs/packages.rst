@@ -29,6 +29,14 @@ and a powerful plugin architecture.
 
 * ``sudo yum install avogadro120``
 
+BIOVIA Discovery Studio
+-----------------------
+
+Built on the BIOVIA Foundation, Discovery Studio is BIOVIA’s comprehensive 
+predictive science application for the Life Sciences.
+
+* ``sudo yum install biovia-discovery-studio-2016``
+
 CCDC CSD System
 ---------------
 
@@ -62,6 +70,30 @@ Dropbox account.
 
 * ``sudo yum install nautilus-dropbox``
 
+FFTW
+----
+
+FFTW is a C subroutine library for computing the Discrete Fourier Transform 
+(DFT) in one or more dimensions, of both real and complex data, and of arbitrary 
+input size.
+
+* ``sudo yum install fftw fftw-devel``
+
+gcc
+---
+
+See :doc:`c` and :doc:`fortran`
+
+GNU Plot
+--------
+
+Gnuplot is a command-line driven, interactive function plotting program 
+especially suited for scientific data representation.  Gnuplot can be used to 
+plot functions and data points in both two and three dimensions and in many 
+different formats.
+
+* ``sudo yum install gnuplot501``
+
 GROMACS
 -------
 
@@ -76,6 +108,16 @@ GSView
 A user friendly viewer for Postscript, PDF, XPS, EPUB1, CBZ, JPEG and PNG files.
 
 * ``sudo yum install gsview60``
+
+Intel Parallel Studio
+---------------------
+
+See :doc:`c` and :doc:`fortran`
+
+Java
+----
+
+See :doc:`java`
 
 Kile
 ----
@@ -100,6 +142,21 @@ the correct number of times to resolve cross references, etc.
 
 * ``sudo yum install latexmk``
 
+libxc
+-----
+
+Libxc is a library of exchange-correlation functionals for density-functional 
+theory. The aim is to provide a portable, well tested and reliable set of 
+exchange and correlation functionals that can be used by all the ETSF codes 
+and also other codes.
+
+* ``sudo yum install libxc300``
+
+LLVM
+----
+
+See :doc:`c`
+
 lyx
 ---
 
@@ -115,6 +172,23 @@ Marvin Suite is a series of applications and an API for chemical sketching,
 visualisation and data exploration.
 
 * ``sudo yum install Marvin``
+
+Mathematica
+-----------
+
+Wolfram Mathematica is a mathematical symbolic computation program, sometimes 
+termed a computer algebra system or program, used in many scientific, 
+engineering, mathematical, and computing fields.
+
+* ``sudo yum install mathematica1101``
+
+MatLab
+------
+
+MATLAB (matrix laboratory) is a multi-paradigm numerical computing environment 
+and fourth-generation programming language.
+
+* ``sudo yum install matlab2016b``
 
 Mendeley Desktop 
 ----------------
@@ -142,6 +216,15 @@ development, in one package.
 
 * ``sudo yum install moe20160802``
 
+netcdf
+------
+
+A set of software libraries and self-describing, machine-independent data 
+formats that support the creation, access, and sharing of array-oriented 
+scientific data.
+
+* ``sudo yum install netcdf``
+
 NWChem
 ------
 
@@ -153,10 +236,38 @@ clusters.
 
 * ``sudo yum install nwchem nwchem-openmpi``
 
+Octave
+------
+
+GNU Octave is a high-level language, primarily intended for numerical 
+computations. It provides a convenient command line interface for solving 
+linear and nonlinear problems numerically, and for performing other numerical 
+experiments using a language that is mostly compatible with Matlab.
+
+* ``sudo yum install octave420``
+
+OpenMPI
+-------
+
+See :doc:`openmpi`
+
 Perl
 ----
 
 See :doc:`perl`
+
+PGI Compilers
+-------------
+
+See :doc:`c` and :doc:`fortran`
+
+Povray
+------
+
+The Persistence of Vision Ray Tracer, or PoV-Ray is a ray-tracing program which 
+generates images from a text-based description of a scene.
+
+* ``sudo yum install povray37``
 
 PyMol
 -----
@@ -172,8 +283,10 @@ Python
 
 See :doc:`python`
 
-RStudio and RStudio Server
---------------------------
+R, RStudio and RStudio Server
+-----------------------------
+
+See :doc:`R`
 
 RStudio is a set of integrated tools designed to help you be more productive 
 with R. It includes a console, syntax-highlighting editor that supports direct 
@@ -182,6 +295,15 @@ management.
 
 * ``sudo yum install rstudio``
 * ``sudo yum install rstudio-server``
+
+SageMath
+--------
+
+SageMath is a free open-source mathematics software system licensed under the
+GPL. It builds on top of many existing open-source packages: NumPy, SciPy, 
+matplotlib, Sympy, Maxima, GAP, FLINT, R and many more. 
+
+* ``sudo yum install sagemath751``
 
 Team Viewer
 ----------
@@ -216,12 +338,45 @@ Linux, FreeBSD, DOS, OpenBSD and others.
 
 * ``sudo yum install VirtualBox-5.1``
 
+VisIT
+-----
+
+VisIt is an Open Source, interactive, scalable, visualization, animation and 
+analysis tool.
+
+* ``sudo yum install visit2121``
+
+VMD
+---
+
+VMD is a molecular visualization program for displaying, animating, and 
+analyzing large biomolecular systems using 3-D graphics and built-in scripting. 
+
+* ``sudo yum install vmd193``
+
+VTK
+---
+
+VTK is an open-source software system for image processing, 3D graphics, volume 
+rendering and visualization. VTK includes many advanced algorithms (e.g., 
+surface reconstruction, implicit modeling, decimation) and rendering techniques 
+(e.g., hardware-accelerated volume rendering, LOD control).
+
+* ``sudo yum install vtk vtk-qt``
+
 xdvi
 ----
 
 A legacy previewer for DVI files within the X Window System.
 
 * ``sudo yum install texlive-xdvi``
+
+xmgrace
+-------
+
+Grace is a WYSIWYG 2D plotting tool for the X Window System and Motif.
+
+* ``sudo yum install xmgrace5125``
 
 xpdf
 ----
