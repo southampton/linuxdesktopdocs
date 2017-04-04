@@ -1,5 +1,5 @@
-Red Hat Developer Toolset
-=========================
+RHDT
+====
 
 RHDT, or the Red Hat Developer Toolset, is a bundle of software for developing
 applications. Bundles are released with new versions once per year and are

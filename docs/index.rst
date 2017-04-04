@@ -14,7 +14,6 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
    mount
    printing
    email
-   packages
 
 .. toctree::
    :maxdepth: 1
@@ -31,7 +30,7 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
 
 .. toctree::
    :maxdepth: 1
-   :caption: Tools
+   :caption: Software
 
    python
    c
@@ -43,6 +42,7 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
    openmpi
    ruby
    perl
+   packages
 
 .. toctree::
    :maxdepth: 1
