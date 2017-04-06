@@ -13,25 +13,37 @@ the next time you start your computer a backup will be attempted then instead.
 Do I need to keep my computer on overnight?
 -------------------------------------------
 
-No! If you prefer to keep your computer turned off overnight then backups will
-still take place. Whenever your computer starts up it determines if a backup should be taken and then initiates a backup if required.
+You do not need to leave your computer on overnight. If you prefer to keep 
+your computer turned off then backups will still take place. Whenever your 
+computer starts up it determines if a backup should be taken and then initiates 
+a backup if required.
+
+How long are backups kept for?
+------------------------------
+
+Backups of each workstation are kept for 30 days after the backup was taken.
+
+If your machine is not switched on, or otherwise unavailable, for 30 days, then
+all backup data will be deleted. To ensure you always have a copy of data 
+in case of hardware failure please ensure your computer takes at least one 
+backup a month.
 
 How can I check the backups are working?
 ----------------------------------------
 
 You can use :doc:`deskctl` to check the status of the last backup attempt.
 
-You can also, if you prefer, run the following command in a terminal::
+You can also run the following command in a terminal::
 
    sudo drone backup status
 
 Can I trigger a backup?
 -----------------------
 
-Yes you can start a backup whenever you need to, this allows you to take a 
-backup before turning your computer off for the day for example. You can start
-a backup using :doc:`deskctl` or if you prefer you can run the following 
-command in a terminal::
+Yes you can start a backup whenever you need to. This allows you, for example, 
+to take a backup before turning your computer off before leaving the office. You
+can start a backup using :doc:`deskctl` or if you prefer you can run the 
+following command in a terminal::
 
    sudo drone backup now
 
@@ -43,10 +55,10 @@ and backs up the data in the snapshot. You can thus carry on using your
 computer without affecting the backup (or the backup affecting your data). The
 backup system uses LVM thin snapshots to accomplish this.
 
-Do backups work outside the University network?
------------------------------------------------
+Do backups work when outside the University network?
+----------------------------------------------------
 
-No. For the backups to work you must be either:
+For the backups to work you must be either:
 
 - Connected to the university network via a cable
 
