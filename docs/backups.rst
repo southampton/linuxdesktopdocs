@@ -58,10 +58,9 @@ backup system uses LVM thin snapshots to accomplish this.
 Do backups work when outside the University network?
 ----------------------------------------------------
 
-For the backups to work you must be either:
+For the backups to work you must connect to the University network via one of
+these methods:
 
-- Connected to the university network via a cable
-
-or 
-
-- Connected to the university virtual private network (VPN) service
+- Connect to the university network via an Ethernet cable
+- Connect to the ``eduroam`` wireless network
+- Connect to the university virtual private network (VPN) service

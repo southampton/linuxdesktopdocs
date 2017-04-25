@@ -27,7 +27,7 @@ privileges:
 SSH Access
 ^^^^^^^^^^
 
-Users in the group ``local`` are granted the privilege of being able to logon
+Users in the group ``users`` are granted the privilege of being able to logon
 to the system via SSH from anywhere within the university network.
 
 Administrator
