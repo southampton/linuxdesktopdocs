@@ -279,7 +279,7 @@ It also includes molecular editing, ray tracing, and movies.
 * ``sudo yum install pymol1840``
 
 Python
-----
+------
 
 See :doc:`python`
 
@@ -306,7 +306,7 @@ matplotlib, Sympy, Maxima, GAP, FLINT, R and many more.
 * ``sudo yum install sagemath751``
 
 Team Viewer
-----------
+-----------
 
 TeamViewer is a proprietary computer software package for remote control, 
 desktop sharing, online meetings, web conferencing and file transfer between 
