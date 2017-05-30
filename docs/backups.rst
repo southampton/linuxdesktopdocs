@@ -64,3 +64,18 @@ these methods:
 - Connect to the university network via an Ethernet cable
 - Connect to the ``eduroam`` wireless network
 - Connect to the university virtual private network (VPN) service
+
+Can backups be disabled?
+------------------------
+
+In very rare circumstances iSolutions will disable backups on a workstation.
+
+To do this, you need to be a member of iSolutions staff with root access, and
+you run the following command to do so::
+
+   sudo drone backup disable
+
+Backups can be then enabled again at a later date with::
+
+   sudo drone backup enable
+
