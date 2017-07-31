@@ -110,7 +110,10 @@ and you can get a list of mounted partitions with ``df``::
    df -h
 
 This will let you figure out what drives are there, and what mount points to 
-add once you've installed RHEL7.
+add once you've installed RHEL7. Make sure to write down the full path to the
+disk, e.g. it will probably be ``/dev/sdb1`` for the device path. You'll also 
+want to make sure you write down the file system type, hopefully it will be
+``ext4``.
 
 Install RHEL7
 -------------
@@ -121,8 +124,77 @@ hard disk. Then power it back on and follow the :doc:`install` guide.
 Reconnect secondary hard drives
 -------------------------------
 
+Once you've installed RHEL7 you should power the machine off again and reconnect
+any hard drives you previously disconnected. You can then power the machine
+back on and reconnect them. Log in and gain root, and then find a list of the
+new drives::
+
+   lsscsi
+
+You should then re-create the directories where you want to mount the drives. In
+nearly all cases this will be ``/data`` so just run::
+
+   mkdir /data
+
+Now you'll need to edit the file system tab (``fstab``) to add a record so the 
+drive is mounted at startup. Edit ``/etc/fstab`` in the editor of your choice
+and add the following::
+
+   /dev/sdb1 /data ext4 defaults 0 0 
+
+Change this line to match what you need it to - .e.g change ``/dev/sdb`` to be
+the device path you wrote down in the earlier steps. Change ``/data`` to be 
+wherever the disk should be mounted. And change ``ext4`` to whatever file system
+is in use (and you wrote down earlier). In nearly all cases though you probably
+won't need to change anything.
+
+Once that is done, save and exit the file, and run::
+
+   mount -a
+
+Now check the disk is mounted::
+
+   df -h
+
 Copy data back
 --------------
 
+The last step is to copy data back onto the workstation. You'll have to plug
+in the USB drive in again, and then work out what it got attached as::
 
+   lsscsi
 
+And you should get an output somewhat similar to this::
+
+   [0:0:0:0]    disk    ATA      KINGSTON SA400S3 71E0  /dev/sda
+   [1:0:0:0]    cd/dvd  TSSTcorp CDDVDW SH-224BB  SB00  /dev/sr0
+   [2:0:0:0]    disk    Seagate  Expansion        9300  /dev/sdb 
+
+As you can see from the above, the USB drive (in this case a Seagate USB drive)
+is listed and it is available at the path ``/dev/sdb``. Create the place we'll
+mount it::
+
+   mkdir /mnt/migrate
+
+And then mount it::
+
+   mount /dev/sdb1 /mnt/migrate
+
+Now we can copy data back. Start with the ``/local/scratch/`` directory and use 
+``rsync`` again to copy back:
+
+   rsync -av --progress /mnt/migrate/scratch/ /local/scratch/
+
+You can then recover the ``/home`` directory data. You probably should not
+recover the data directly though. In most cases, users will be moving from
+GNOME 2 to GNOME 3, and starting with a fresh home directory makes more sense.
+If a user insists they want their original home directory, feel free to restore
+it, but it can lead to problems, and so you should recommend that they do not.
+
+Either restore the data into /local/scratch/home/ like so::
+
+   rsync -av --progress /mnt/migrate/home/ /local/scratch/home/
+
+Or restore individual directories for users (not recommended):
+
+   rsync -av --progress /mnt/migrate/home/<username>/ /home/<username/
