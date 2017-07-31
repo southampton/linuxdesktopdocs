@@ -15,6 +15,7 @@ Welcome to the documentation for Linux Desktops at the University of Southampton
    printing
    email
    install
+   migration
 
 .. toctree::
    :maxdepth: 1
