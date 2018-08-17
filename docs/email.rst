@@ -1,7 +1,8 @@
 E-Mail
 ======
 
-Unfortunately the univerity's e-mail solution is Microsoft Exchange.
+At present, the univerity's e-mail solution is Microsoft Exchange for most staff
+and Office 365 for students.
 
 Using Outlook web access
 ------------------------
